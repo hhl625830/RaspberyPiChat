@@ -123,4 +123,7 @@ hello python
         
         sudo apt-get update && sudo apt-get upgrade -y
         sudo apt-get install python3-pyaudio portaudio19-dev -y
+        sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev 
         git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
+        cd pyaudio
+        python setup.py install
