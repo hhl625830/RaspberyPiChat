@@ -105,6 +105,7 @@ hello python
         You should be able to hear a sample test audio on your speaker/headset.
         
 **5**   test you Recording Device(Microphone)
+
         录音5秒
         arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
         或者
