@@ -127,3 +127,41 @@ hello python
         git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
         cd pyaudio
         python setup.py install
+        
+**8**   Finally, we can download Snowboy itself to our Raspberry Pi, To do this use the following
+        command on your Raspberry Pi to grab the latest compiled version for the Raspberry Pi
+        
+        
+        Install swig
+        wget http://hahack-1253537070.file.myqcloud.com/misc/swig-3.0.10.tar.gz
+        tar xvf swig-3.0.10.tar.gz
+        cd swig-3.0.10
+        sudo apt-get -y update
+        sudo apt-get install -y libpcre3 libpcre3-dev
+        ./configure --prefix=/usr --without-clisp --without-maximum-compile-warnings
+        make
+        make install
+        install -v -m755 -d /usr/share/doc/swig-3.0.10
+        sudo cp -v -R Doc/* /usr/share/doc/swig-3.0.10
+        sudo apt-get install -y libatlas-base-dev
+        
+        wget -O snowboy.tar.bz2 https://go.pimylifeup.com/napoRs/snowboy
+        tar xvjr snowboy.tar.bz2
+        
+        mv rpi-arm-raspbian-8.0-1.1.1/ snowboy/
+        cd snowboy
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
