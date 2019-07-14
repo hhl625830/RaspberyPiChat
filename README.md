@@ -115,4 +115,12 @@ hello python
         或
         aplay temp.wav 
         
-   
+**6**   Microphone and Speaker Volume Control
+        
+        alsamixer
+        
+**7**   install pyaudio
+        
+        sudo apt-get update && sudo apt-get upgrade -y
+        sudo apt-get install python3-pyaudio portaudio19-dev -y
+        git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
