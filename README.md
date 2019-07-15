@@ -118,7 +118,8 @@ hello python
 **6**   Microphone and Speaker Volume Control
         
         alsamixer
-        install Audacity
+        install Audacity 安装图形界面得录音工具
+        sudo apt-get -y install audacity
         
 **7**   install pyaudio
         
@@ -134,22 +135,24 @@ hello python
         
         Install swig
         wget http://hahack-1253537070.file.myqcloud.com/misc/swig-3.0.10.tar.gz
-        tar xvf swig-3.0.10.tar.gz
+        tar xzvf swig-3.0.10.tar.gz
         cd swig-3.0.10
         sudo apt-get -y update
         sudo apt-get install -y libpcre3 libpcre3-dev
         ./configure --prefix=/usr --without-clisp --without-maximum-compile-warnings
-        make
-        make install
-        install -v -m755 -d /usr/share/doc/swig-3.0.10
+        sudo make
+        sudo make install
+        sudo install -v -m755 -d /usr/share/doc/swig-3.0.10
         sudo cp -v -R Doc/* /usr/share/doc/swig-3.0.10
         sudo apt-get install -y libatlas-base-dev
         
-        wget -O snowboy.tar.bz2 https://go.pimylifeup.com/napoRs/snowboy
+        wget http://hahack-1253537070.file.myqcloud.com/misc/snowboy.tar.bz2
         tar xvjr snowboy.tar.bz2
         
-        mv rpi-arm-raspbian-8.0-1.1.1/ snowboy/
-        cd snowboy
+        cd snowboy/swig/Python3
+        sudo make
+        cp _snowboydetect.so /**项目目录**/snowboy/
+
         
         
 
