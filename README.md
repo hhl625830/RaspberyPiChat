@@ -118,6 +118,7 @@ hello python
 **6**   Microphone and Speaker Volume Control
         
         alsamixer
+        install Audacity
         
 **7**   install pyaudio
         
